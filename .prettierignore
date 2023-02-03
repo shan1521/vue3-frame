@@ -1,11 +1,11 @@
 /dist/*
 .local
-.output.js
 /node_modules/**
 src/.DS_Store
+!.prettierrc.js
 
 **/*.svg
 **/*.sh
 
 /public/*
-components.d.ts
+vite-env.d.ts

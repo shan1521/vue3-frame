@@ -1,0 +1,5 @@
+/dist/*
+/public/*
+!.stylelintrc.js
+
+vite-env.d.ts

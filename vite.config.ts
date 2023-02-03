@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import eslintPlugin from 'vite-plugin-eslint';
+import StylelintPlugin from 'vite-plugin-stylelint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,5 +11,5 @@ export default defineConfig({
         port: 8000,
         open: true
     },
-    plugins: [vue(), eslintPlugin()]
+    plugins: [vue(), eslintPlugin(), StylelintPlugin({ fix: true })]
 });

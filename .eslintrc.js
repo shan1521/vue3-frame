@@ -14,36 +14,26 @@ module.exports = {
      */
     extends: ['plugin:vue/vue3-strongly-recommended', 'airbnb-base', 'prettier'],
     // ESLint 会对代码进行校验，parser 的作用是将代码转换为 ESTree (AST)，ESLint 会对 ESTree 进行校验
-    parser: "vue-eslint-parser",
+    parser: 'vue-eslint-parser',
     // 解析器配置项
     parserOptions: {
         // es 的版本号，或者年份都可以
         ecmaVersion: 'latest',
         parser: '@typescript-eslint/parser',
         // 源码类型 默认是 script，es 模块使用 module
-        sourceType: "module",
+        sourceType: 'module',
         // 额外的语言类型
         ecmaFeatures: {
             jsx: true,
             tsx: true
         }
     },
-    // 全局定义的宏，这样在源文件中使用全局变量就不会报错或警告
-    // global: {
-    //     defineProps: 'readonly',
-    //     defineEmits: 'readonly',
-    //     defineExpose: 'readonly',
-    //     withDefaults: 'readonly'
-    // },
     /**
      * eslint-plugin- 前缀可以省略
      * vue 官方提供 eslint-plugin-vue 插件，
      * 它提供了 parser 和 rules，parser 为 vue-eslint-parser 放在外层的 parser 字段中，rules 放在 extends 字段中，选择合适的规则
      */
-    plugins: [
-        'vue',
-        '@typescript-eslint'
-    ],
+    plugins: ['vue', '@typescript-eslint'],
     settings: {
         // 设置项目中的别名
         'import/resolver': {
@@ -62,4 +52,4 @@ module.exports = {
         'vue/attribute-hyphenation': 0,
         'vue/v-on-event-hyphenation': 0
     }
-}
+};

@@ -7,11 +7,7 @@ node_modules
 .idea
 dist
 /public
-/docs
 .husky
-/bin
-.eslintrc.js
-prettier.config.js
 /src/mock/*
 
 # Logs
@@ -27,9 +23,6 @@ lerna-debug.log*
 dist-ssr
 *.local
 
-/cypress/videos
-/cypress/screenshots/
-
 # Editor directories and files
 .vscode
 !.vscode/extensions.json
@@ -40,4 +33,4 @@ dist-ssr
 *.sln
 *.sw?
 
-components.d.ts
+vite-env.d.ts
