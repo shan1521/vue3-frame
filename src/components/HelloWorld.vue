@@ -7,9 +7,6 @@
     const add = () => {
         count.value += 1;
         // console.log(count,'count');
-        // console.log(count,'count');
-        // console.log(count,'count');
-        // console.log(count,'count');
     };
 </script>
 
